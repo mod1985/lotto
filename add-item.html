@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Items - Fandi</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Fandi</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="add-item.html">Add Item</a></li>
+                <li><a href="signin.html">Sign In</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Add New Lottery Item</h2>
+        <form id="add-item-form" enctype="multipart/form-data">
+            <label for="type">Type:</label>
+            <select id="type" name="type" required>
+                <option value="house">House</option>
+                <option value="boat">Boat</option>
+                <option value="car">Car</option>
+            </select>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="minTickets">Minimum Tickets to Start Draw (Ticket Price $2 fixed):</label>
+            <input type="number" id="minTickets" name="minTickets" required>
+
+            <label for="paymentInfo">payment Info:</label>
+            <input type="text" id="paymentInfo" name="paymentInfo" required>
+
+            <label for="image">Image:</label>
+            <input type="file" id="image" name="image" required>
+
+            <button type="submit">Add Item</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Lottery Marketplace. All rights reserved.</p>
+    </footer>
+    <script src="add-item.js"></script>
+</body>
+</html>
